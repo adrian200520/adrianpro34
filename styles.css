@@ -1,0 +1,189 @@
+/* Reset básico para márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body con fondo suave y fuente elegante */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #5DADE2, #2874A6);
+    color: #222;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Contenedor central */
+.contenedor {
+    max-width: 700px;
+    background-color: #f0f0f0;
+    margin: 30px auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    color: #1B2631;
+    margin-bottom: 20px;
+}
+
+/* Texto de párrafos */
+p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* Navegación */
+nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #154360;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2980B9;
+    color: white;
+}
+
+/* Listas */
+ul, ol {
+    margin: 20px 0 30px 40px;
+    font-size: 1.1rem;
+    color: #2C3E50;
+}
+
+/* Tabla estilizada */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table th, table td {
+    border: 1px solid #34495E;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+table th {
+    background-color: #2980B9;
+    color: white;
+}
+
+/* Formulario */
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1B2631;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1.5px solid #2980B9;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #1B4F72;
+    outline: none;
+}
+
+/* Botón enviar */
+input[type="submit"] {
+    background-color: #1B4F72;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #154360;
+}
+
+/* Imágenes con estilo */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Enlaces en lista de redes sociales */
+ul li a {
+    color: #154360;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #1B4F72;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .contenedor {
+        width: 90%;
+        padding: 20px;
+    }
+}
+.inicio-cuadritos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .cuadrito {
+    flex: 1 1 150px;
+    max-width: 180px;
+    background-color: #2980B9;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    border-radius: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .cuadrito:hover, .cuadrito:focus {
+    background-color: #1B4F72;
+    transform: scale(1.05);
+    outline: none;
+  }
+  
